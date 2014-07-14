@@ -1,0 +1,24 @@
+# AdminHelper by the Austrian Developer LauseggerDevelopment (lausi1793)
+#The stuff is shown in the /team command you can add more stuff members
+updateNotification: true
+seventoslash: false
+team:
+  staff1:
+    name: lausi1793
+    prefix: '&c[Admin] &4'
+  staff2:
+    name: Testuser
+    prefix: '&c[Admin] &4'
+  staff3:
+    name: Randomuser
+    prefix: '&b[Moderator] &b'
+messages:
+  clearchat: '&6%player% &bhas cleared the chat!'
+  clearprivatechat: '&bYour own chat was cleared!'
+  globalmuteenabled: '&cThe Chat is now disabled! You are not allowed to write anything'
+  globalmutedisabled: '&cThe Chat is now enabled!'
+  reportmessage: '&a%sender% &ehas reportet &b%player% &efor &c%reason%'
+  reportsuccessfull: '&cSuccesfully reportet!'
+  capslock: '&cNo CAPS Lock allowed!'
+  dontspam: '&cYou are not allowed to spam!'
+  
