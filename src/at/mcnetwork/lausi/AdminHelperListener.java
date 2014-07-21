@@ -52,7 +52,7 @@ public class AdminHelperListener implements CommandExecutor, Listener {
 		      event.setCancelled(true);
 		    }
 		}
-		
+		if ((!event.getPlayer().hasPermission("adminhelper.chat.bypass"))) {
 		if (spammessage.containsKey(event.getPlayer().getName())) {
 	        if (((String)spammessage.get(event.getPlayer().getName())).equalsIgnoreCase(event.getMessage())) {
 	          event.setCancelled(true);
@@ -64,6 +64,7 @@ public class AdminHelperListener implements CommandExecutor, Listener {
 	      else {spammessage.put(event.getPlayer().getName(), event.getMessage());
 	      
 	      }
+		}
 		
 	    char[] message = event.getMessage().toCharArray();
 	    if ((!event.getPlayer().hasPermission("adminhelper.chat.bypass"))) {
