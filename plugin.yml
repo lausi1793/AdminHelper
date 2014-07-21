@@ -1,6 +1,6 @@
 name: AdvancedAdminHelper
 main: at.mcnetwork.lausi.AdvancedAdminHelper
-version: 1.0
+version: 1.1
 author: LauseggerDevelopment
 website: http://McNetwork.at
 commands:
@@ -36,10 +36,12 @@ permissions:
   adminhelper.*:
     description: Only OP
     children:
+      adminhelper.info: true
       adminhelper.reload: true
       adminhelper.clearchat: true
       adminhelper.privateclearchat: true
       adminhelper.report: true
+      adminhelper.chat.bypass: true
     default: op
   adminhelper.report:
     description: ALL permissions about reporting
@@ -58,3 +60,7 @@ permissions:
     description: Bypasses the globalmute.
   adminhelper.report.notification:
     description: Get a notification when somebody is reporting a player.
+  adminhelper.chat.bypass:
+    description: Bypasses Caps and Spam.
+  adminhelper.info:
+    description: Information about the plugin.
