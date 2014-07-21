@@ -92,6 +92,7 @@ public class AdvancedAdminHelper extends JavaPlugin implements Listener{
 	    {
 	      if (p != null)
 	      {
+	    	  if (p.hasPermission("adminhelper.info")) {
 	    	  if(args.length == 0){
 	        p.sendMessage("§e==========[ AdminHelper Help Version: " + ChatColor.YELLOW + version + " §e]==========");
         	p.sendMessage(ChatColor.GREEN + "Hy " + p.getDisplayName() + ChatColor.GREEN + "! Here are all the commands of AdminHelper");
@@ -119,6 +120,12 @@ public class AdvancedAdminHelper extends JavaPlugin implements Listener{
 	    		  p.sendMessage("§cToo many arguments!\n§a/ami - Information about the plugin\n/ami reload - reloads the config.yml");
 	    		  
 	    	  }
+	    	  
+	    	  }else{
+	    	        p.sendMessage("§cYou dont have the permission\n§c-adminhelper.info");
+	    	        return true;
+	    	      }
+	    	  
 	      }else{
 	      sender.sendMessage("This command is not supported for the console.");
 	      }
@@ -223,7 +230,7 @@ public class AdvancedAdminHelper extends JavaPlugin implements Listener{
 	          p.sendMessage(ChatColor.AQUA + "Utilization: " + ramCheck() + usedMemory() + "%");
 	          return true;
 	        }
-	        p.sendMessage("§cYou dont have the permission\n§c-adminhelper.*");
+	        p.sendMessage("§cYou dont have the permission\n§c-adminhelper.ram");
 	        return true;
 	      }
 	    
@@ -231,7 +238,7 @@ public class AdvancedAdminHelper extends JavaPlugin implements Listener{
 	    {
 	      if (args.length > 0)
 	      {
-	    	  p.sendMessage("§cToo mayn arguments!\n/team");
+	    	  p.sendMessage("§cToo many arguments!\n/team");
 	      }
 
 	      if (args.length == 0)
@@ -267,3 +274,4 @@ public class AdvancedAdminHelper extends JavaPlugin implements Listener{
 	  }
 
 }
+
