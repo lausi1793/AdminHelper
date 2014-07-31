@@ -1,6 +1,6 @@
 name: AdvancedAdminHelper
 main: at.mcnetwork.lausi.AdvancedAdminHelper
-version: 1.1
+version: 1.1.1
 author: LauseggerDevelopment
 website: http://McNetwork.at
 commands:
