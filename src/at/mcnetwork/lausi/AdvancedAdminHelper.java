@@ -31,7 +31,7 @@ public class AdvancedAdminHelper extends JavaPlugin implements Listener{
 
 		if(getConfig().getBoolean("updateNotification")){
 		try {
-			new Updater(this, 82647, "http://dev.bukkit.org/bukkit-plugins/hideandcustomplugins/", "SearchForUpdates").search();
+			new Updater(this, 82647, "http://dev.bukkit.org/bukkit-plugins/advancedadminhelper/", "SearchForUpdates").search();
 		} catch (MalformedURLException e1) {
 			e1.printStackTrace();
 		}
