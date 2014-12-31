@@ -96,12 +96,14 @@ public class AdminHelperListener implements CommandExecutor, Listener {
 			      if (this.globalmute) {
 			        this.globalmute = false;
 			        Bukkit.broadcastMessage(this.plugin.getConfig().getString("messages.globalmutedisabled").replaceAll("&", "§"));
+			        Bukkit.broadcastMessage("§aGlobalchat online!");
 			        return true;
 			      }
 
 			      if (!this.globalmute) {
 			        this.globalmute = true;
 			        Bukkit.broadcastMessage(this.plugin.getConfig().getString("messages.globalmuteenabled").replaceAll("&", "§"));
+			        Bukkit.broadcastMessage("§aGlobalchat offline!");
 			        return true;
 			      }
 		}
